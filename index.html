@@ -3,15 +3,13 @@
 <!--divinectorweb.com-->
 <head>
     <meta charset="UTF-8">
-    <title>How to create a pop up window using html css</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-   <h3>Your Company</h3>
-	<h5>We Are Award Winning Web Design Agency From NewYork. We will help you improve your website and digital marketing, to increase your leads and sales online.</h5>
+	<h5 style="margin-bottom: 30px;">Popup contact us form.</h5>
 	<div class="box">
 		<a class="button" href="#divOne">Contact US</a>
 	</div>
@@ -21,12 +19,12 @@
 			<div class="content">
 				<div class="container">
 					<form action="https://formsubmit.co/ead6e1392e0f3328d146cc0a15740841" method="POST">
-						<label>First Name</label>
-						<input placeholder="Your name.." type="text">
-						<label>Last Name</label>
-						<input placeholder="Your last name.." type="text">
-						<label>Subject</label> 
-						<textarea iplaceholder="Write something.."></textarea>
+						<label>Name:</label>
+						<input type="text" name="name" id="name" placeholder="Enter your name" required="">
+						<label>Email</label>
+						<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+						<label class="box2">Message</label> 
+						<textarea name="message" id="message" placeholder="Your message here" rows="6"></textarea>
 						<input type="submit" value="Submit">
 					</form>
 				</div>
